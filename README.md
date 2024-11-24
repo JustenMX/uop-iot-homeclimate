@@ -116,4 +116,3 @@ The following hierarchical structure is used for MQTT topics, organized by senso
    - Used to visualize and manage sensor data.
 
 ---
-# uop-iot-homeclimate
