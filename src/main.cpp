@@ -32,6 +32,7 @@ void setup()
   // Setup MQTT
   setupMQTT(client);
 
+  // Initialize Hardware
   initializeBuzzer();
   initializeNeoPixels();
   initializeOLED();
@@ -42,7 +43,7 @@ void setup()
 
 /*
  * =================================================
- * ███████████████ VOID LOOP () ███████████████████
+ * ███████████████ VOID LOOP () ████████████████████
  * =================================================
  */
 
@@ -63,15 +64,13 @@ void loop()
 
   // Process Sensors and Display on OLED
   displayWelcomeLogo();
-  //
   displayWaveAnimation();
+  //
   processSoundSensor();
-  //
-  displayWaveAnimation();
   processBME680();
+  processMQ2();
   //
   displayWaveAnimation();
-  processMQ2();
 
   // Publish updated sensor readings to MQTT
   publishMQTTReadings(client, temperature, humidity, pressure, gas, altitude, lpg, co, smoke, sound);

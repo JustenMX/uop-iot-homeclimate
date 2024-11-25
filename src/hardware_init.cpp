@@ -1,7 +1,7 @@
 #include "hardware_init.h"
 #include "helper_functions.h"
 
-// Global Variables
+// Declare Variables
 float temperature;
 float humidity;
 float pressure;

@@ -50,15 +50,15 @@
 
 /*
  * =================================================
- * ███████████████ GLOBAL VARIABLE █████████████████
+ * ███████████████ GLOBAL VARIABLES ████████████████
  * =================================================
  */
 
 // BME680 Sensor Readings
 extern float temperature; // Temperature reading (°C)
 extern float humidity;    // Humidity reading (%)
-extern float pressure;    // Barometric pressure reading (hPa)
-extern float gas;         // Gas resistance reading (kΩ)
+extern float pressure;    // Barometric Pressure reading (hPa)
+extern float gas;         // Gas Resistance reading (kΩ)
 extern float altitude;    // Altitude reading (meters)
 
 // MQ-2 Gas Sensor Readings
