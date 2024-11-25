@@ -44,14 +44,9 @@
 // NEOPIXEL CONFIGURATION
 #define NEOPIXEL_PIN 16
 #define NUM_PIXELS 5
-Adafruit_NeoPixel pixels(NUM_PIXELS, NEOPIXEL_PIN, NEO_GRB + NEO_KHZ800);
 
 // BUZZER CONFIGURATION
 #define BUZZER_PIN 25
-
-// MQTT client
-WiFiClient espClient;
-PubSubClient client(espClient);
 
 /*
  * =================================================
@@ -60,19 +55,19 @@ PubSubClient client(espClient);
  */
 
 // BME680 Sensor Readings
-float temperature; // Temperature reading (°C)
-float humidity;    // Humidity reading (%)
-float pressure;    // Barometric pressure reading (hPa)
-float gas;         // Gas resistance reading (kΩ)
-float altitude;    // Altitude reading (meters)
+extern float temperature; // Temperature reading (°C)
+extern float humidity;    // Humidity reading (%)
+extern float pressure;    // Barometric pressure reading (hPa)
+extern float gas;         // Gas resistance reading (kΩ)
+extern float altitude;    // Altitude reading (meters)
 
 // MQ-2 Gas Sensor Readings
-float lpg;   // LPG gas concentration (ppm)
-float co;    // Carbon Monoxide concentration (ppm)
-float smoke; // Smoke concentration (ppm)
+extern float lpg;   // LPG gas concentration (ppm)
+extern float co;    // Carbon Monoxide concentration (ppm)
+extern float smoke; // Smoke concentration (ppm)
 
 // KY-038 Sound Sensor Reading
-float sound; // Sound level (dB)
+extern float sound; // Sound level (dB)
 
 /*
  * =================================================

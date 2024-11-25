@@ -1,5 +1,5 @@
-#ifndef HELPER_FUNCTION_H
-#define HELPER_FUNCTION_H
+#ifndef HELPER_FUNCTIONS_H
+#define HELPER_FUNCTIONS_H
 
 #include "hardware_init.h"
 

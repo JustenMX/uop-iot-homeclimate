@@ -1,5 +1,5 @@
 #include "oled_display.h"
-#include "helper_function.h"
+#include "helper_functions.h"
 #include "bitmap_logo.h"
 #include "bitmap_parrot.h"
 

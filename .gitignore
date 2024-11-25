@@ -10,5 +10,5 @@
 # Exclude specific configuration files
 include/wifi_setup.h
 lib/mqtt/mqtt_config.h
-
+wifi_setup.cpp
 

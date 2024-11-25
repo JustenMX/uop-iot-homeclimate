@@ -1,5 +1,16 @@
 #include "hardware_init.h"
-#include "helper_function.h"
+#include "helper_functions.h"
+
+// Global Variables
+float temperature;
+float humidity;
+float pressure;
+float gas;
+float altitude;
+float lpg;
+float co;
+float smoke;
+float sound;
 
 // Hardware Initialization
 Adafruit_NeoPixel pixels(NUM_PIXELS, NEOPIXEL_PIN, NEO_GRB + NEO_KHZ800);
