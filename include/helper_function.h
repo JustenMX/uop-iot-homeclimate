@@ -11,6 +11,12 @@ enum Status
     DANGER
 };
 
+/*
+ * =================================================
+ * ███████████████ FUNCTION DECLARATION ████████████
+ * =================================================
+ */
+
 void testBuzzer();
 void testNeoPixels();
 void checkSafetyAndAlert(float lpg, float co, float smoke);

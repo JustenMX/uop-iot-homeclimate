@@ -1,6 +1,8 @@
 #include "sensor_processing.h"
 #include "hardware_init.h"
 #include "helper_function.h"
+#include "oled_display.h"
+#include "serial_monitor.h"
 
 /*
  * ==================================================

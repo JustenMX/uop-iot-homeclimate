@@ -1,4 +1,5 @@
 #include "hardware_init.h"
+#include "helper_function.h"
 
 // Hardware Initialization
 Adafruit_NeoPixel pixels(NUM_PIXELS, NEOPIXEL_PIN, NEO_GRB + NEO_KHZ800);
