@@ -136,6 +136,7 @@ void displaySoundSensorReading(float soundLevel);
 // Serial Monitor Functions
 void printBME680Readings(float temperature, float humidity, float pressure, float gas, float altitude);
 void printMQ2Readings(float lpg, float co, float smoke);
+void printSoundSensorReadings(float soundLevel);
 
 /*
  * ==================================================================================
