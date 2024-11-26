@@ -99,8 +99,8 @@ void setNeoPixelStatus(Status status)
     {
     case SAFE:
         for (int i = 0; i < 3; i++)
-        { // Blue flashing
-            pixels.fill(pixels.Color(0, 0, 255));
+        { // Green flashing
+            pixels.fill(pixels.Color(0, 255, 0));
             pixels.show();
             delay(500);
             pixels.clear();
@@ -110,8 +110,8 @@ void setNeoPixelStatus(Status status)
         break;
     case WARNING:
         for (int i = 0; i < 3; i++)
-        { // Green flashing
-            pixels.fill(pixels.Color(0, 255, 0));
+        { // Blue flashing
+            pixels.fill(pixels.Color(0, 0, 255));
             pixels.show();
             delay(500);
             pixels.clear();
